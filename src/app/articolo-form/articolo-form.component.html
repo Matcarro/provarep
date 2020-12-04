@@ -1,0 +1,28 @@
+<p>articolo-form works!</p>
+<form>
+    <div>
+        <label for="txtTitolo">Titolo</label>
+        <input type="text" id="txtTitolo" required [(ngModel)]="pippo2.titolo" name="titolo">
+    </div>
+    <div>
+        <label for="txtAutore">Autore</label>
+        <input type="text" id="txtAutore" required [(ngModel)]="pippo2.autore" name="autore">
+    </div>
+    <div>
+        <label for="txtTesto">Testo</label>
+        <input type="text" id="txtTesto" required [(ngModel)]="pippo2.testo" name="testo">
+    </div>
+    <button type="button">Invia</button>
+</form>
+<div>
+    <p>Titolo: {{pippo2.titolo}}</p>
+    <p>Autore: {{pippo2.autore}}</p>
+    <p>Testo: {{pippo2.testo}}</p>
+</div>
+
+
+FOR
+<div *ngFor="let articolo of listaArticoli">
+    {{articolo.titolo+' '+articolo.autore+' '+articolo.testo}}
+
+</div>
