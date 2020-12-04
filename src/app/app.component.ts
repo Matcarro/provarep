@@ -19,21 +19,21 @@ export class AppComponent {
     this.articolo={
       titolo:"ciao",
       autore:"io",
-      testo:"aia",
+      testo:"testuale",
       numApprezzamenti:0
     }
   }
 
-  
+
   stampaParametro(valore){
     console.log("sono il padre."+valore)
 
   }
 
-  inviaArticolo(articolo) { 	
-    this.elencoArticoli.push(articolo) 
+  inviaArticolo(articolo) {
+    this.elencoArticoli.push(articolo)
   }
-  
+
 
 
 }
