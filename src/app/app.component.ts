@@ -19,7 +19,7 @@ export class AppComponent {
     this.articolo={
       titolo:"ciao",
       autore:"io",
-      testo:"testuale",
+      testo:"testuale  ",
       numApprezzamenti:0
     }
   }
